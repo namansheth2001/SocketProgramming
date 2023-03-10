@@ -1,0 +1,10 @@
+README: 
+
+- start the WebServerPROB-2.py file which acts as a web server (hosted on local host port 6789)
+- start the proxy.py file which acts as a proxy server (hosted on port 8888)
+- use the command "!curl http://localhost:6789/helloworld.html -o my-hw.html" to make a HTTP GET request to a web server running on the local machine at port 6789, and download the response body to a local file named "my-hw.html"
+- use the command "!curl http://localhost:6789/helloworld.html" to print contents of helloworld.html file
+- use command "!curl http://localhost:8888/localhost:6789/helloworld.html" to access the file from a proxy server having port 8888
+
+repeat same steps for "image.jpg" 
+- use "!curl http://localhost:6789/image.jpg --output my-img.jpg" to store the file on local machine
